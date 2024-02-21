@@ -1,4 +1,6 @@
 /* Reset Rules are a modified version inspired by https://www.joshwcomeau.com/css/custom-css-reset/ and https://piccalil.li/blog/a-modern-css-reset/ */
+/* Some rules are included in Tailwind Preflight: https://tailwindcss.com/docs/preflight 
+It's beneficial to add reset in index.css by extending preflight, however, I'm maintaining my own reset rules in a separate file for projects without tailwind. */
 
 /* Use a more-intuitive box-sizing model. */
 *,

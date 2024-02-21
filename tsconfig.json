@@ -6,10 +6,10 @@
 		"types": ["vite/client"],
 		"module": "ESNext",
 		"skipLibCheck": true,
-		"baseUrl": "./src",
-		// "paths": {
-		// 	"@/*": ["src/*"]
-		// },
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
 
 		/* Bundler mode */
 		"moduleResolution": "bundler",
@@ -27,7 +27,7 @@
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": true
-	},
-	"include": ["src"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+	}
+	// "include": ["src"],
+	// "references": [{ "path": "./tsconfig.node.json" }]
 }
