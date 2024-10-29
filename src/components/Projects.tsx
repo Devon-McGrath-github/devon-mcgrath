@@ -1,9 +1,7 @@
-import { Card, CardContent } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import { type CarouselApi } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'
 import React from 'react'
-import { Button } from './ui/button'
 
 const height = 300
 const width = 500
@@ -81,7 +79,13 @@ export function PortfolioCarousel() {
 						key={`project-${project.id}-${index}`}
 						className="flex w-full justify-center items-center basis-1/2 md:basis-1/3 lg:basis-1/4 pl-7 "
 					>
-						<img src={project.image} width={width} height={height} alt={project.alt} />
+						<img
+							src={project.image}
+							width={width}
+							height={height}
+							alt={project.alt}
+							className="rounded-md"
+						/>
 					</CarouselItem>
 				))}
 			</CarouselContent>
