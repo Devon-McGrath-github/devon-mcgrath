@@ -1,4 +1,6 @@
+import { PortfolioCarousel } from './components/Projects'
 import { Button } from './components/ui/button'
+import { Carousel } from './components/ui/carousel'
 import './styles/App.css'
 
 function App() {
@@ -24,8 +26,8 @@ function App() {
 					<h1>Devon McGrath</h1>
 				</div>
 
-				<div className="flex flex-row shrink-0">
-					<p> carousel content </p>
+				<div className="shrink-0 flex items-center justify-center">
+					<PortfolioCarousel />
 				</div>
 			</main>
 		</>
