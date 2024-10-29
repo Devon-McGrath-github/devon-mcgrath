@@ -1,6 +1,5 @@
 import { PortfolioCarousel } from './components/Projects'
 import { Button } from './components/ui/button'
-import { Carousel } from './components/ui/carousel'
 import './styles/App.css'
 
 function App() {
