@@ -65,6 +65,7 @@ export function PortfolioCarousel() {
 			setApi={setApi}
 			opts={{
 				loop: true,
+				skipSnaps: true,
 			}}
 			plugins={[
 				Autoplay({
@@ -80,11 +81,7 @@ export function PortfolioCarousel() {
 						key={`project-${project.id}-${index}`}
 						className="flex w-full justify-center items-center basis-1/2 md:basis-1/3 lg:basis-1/4 pl-7 "
 					>
-						<Card>
-							<CardContent className="flex aspect-square items-center justify-center p-6">
-								<img src={project.image} width={width} height={height} alt={project.alt} />
-							</CardContent>
-						</Card>
+						<img src={project.image} width={width} height={height} alt={project.alt} />
 					</CarouselItem>
 				))}
 			</CarouselContent>
