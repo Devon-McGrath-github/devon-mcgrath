@@ -6,9 +6,9 @@ function App() {
 	return (
 		<>
 			<main className="flex flex-col h-full">
-				<div className="-skew-y-[15deg] bg-red-200 h-1/3 w-full -z-10 absolute overflow-hidden"></div>
+				<div className="-skew-y-[12deg] bg-red-200 h-1/3 w-full -z-10 absolute overflow-hidden"></div>
 
-				<nav className="flex flex-row gap-4 row-start-2 col-start-2 items-end justify-center">
+				<nav className="flex flex-row gap-4 row-start-2 col-start-2 items-end justify-center py-3 ">
 					<Button variant={'ghost'}>
 						<a href="https://github.com/Devon-McGrath-github" target="_blank">
 							Github
@@ -24,10 +24,10 @@ function App() {
 					</Button>
 				</nav>
 				<div className="flex flex-col flex-[1_0_auto]">
-					<h1>Devon McGrath</h1>
+					<h1 className="HomepageHeroHeader">Devon McGrath</h1>
 				</div>
 
-				<div className="shrink-0 flex items-center justify-center">
+				<div className="shrink-0 flex items-center justify-center py-10 ">
 					<PortfolioCarousel />
 				</div>
 			</main>
