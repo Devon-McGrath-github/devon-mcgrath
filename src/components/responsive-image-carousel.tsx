@@ -50,6 +50,14 @@ const projects = [
 		image: IMAGE,
 		alt: 'Screenshot of a weather dashboard displaying temperature and weather icons for a city.',
 	},
+	{
+		id: 5,
+		title: 'Example 5',
+		description:
+			'A weather dashboard app that displays current weather and a 5-day forecast for any location. Built using JavaScript and the OpenWeather API.',
+		image: IMAGE,
+		alt: 'Screenshot of example.',
+	},
 ]
 
 export default function ResponsiveImageCarousel() {
@@ -99,7 +107,7 @@ export default function ResponsiveImageCarousel() {
 					<CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
 						<div className="p-1">
 							<Card>
-								<CardContent className="flex aspect-square items-center justify-center p-6">
+								<CardContent className="flex aspect-square items-center justify-center p-6 flex-col">
 									<img
 										src={project.image}
 										alt={project.alt}
@@ -107,6 +115,7 @@ export default function ResponsiveImageCarousel() {
 										height={height}
 										className="rounded-md object-cover"
 									/>
+									<h2>{project.title}</h2>
 								</CardContent>
 							</Card>
 						</div>
