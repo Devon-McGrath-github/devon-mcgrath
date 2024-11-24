@@ -1,17 +1,6 @@
-import { useEffect, useState, useCallback } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-
-// Sample image data (replace with your actual image data)
-const images = [
-	{ src: '/placeholder.svg?height=400&width=600', alt: 'Image 1' },
-	{ src: '/placeholder.svg?height=400&width=600', alt: 'Image 2' },
-	{ src: '/placeholder.svg?height=400&width=600', alt: 'Image 3' },
-	{ src: '/placeholder.svg?height=400&width=600', alt: 'Image 4' },
-	{ src: '/placeholder.svg?height=400&width=600', alt: 'Image 5' },
-]
 
 const height = 400
 const width = 600
