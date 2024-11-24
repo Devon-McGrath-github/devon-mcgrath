@@ -53,50 +53,46 @@ const projects = [
 ]
 
 export default function ResponsiveImageCarousel() {
-	const [emblaRef, emblaApi] = useEmblaCarousel(
-		{
-			loop: true,
-			align: 'start',
-		},
-		[Autoplay({ delay: 4000, stopOnInteraction: false })]
-	)
+	// const [emblaRef, emblaApi] = useEmblaCarousel()
 
-	const [isHovered, setIsHovered] = useState(false)
+	// const [isHovered, setIsHovered] = useState(false)
 
-	const onMouseEnter = useCallback(() => {
-		setIsHovered(true)
-		emblaApi?.stop()
-	}, [emblaApi])
+	// const onMouseEnter = useCallback(() => {
+	// 	setIsHovered(true)
+	// 	emblaApi?.stop()
+	// }, [emblaApi])
 
-	const onMouseLeave = useCallback(() => {
-		setIsHovered(false)
-		emblaApi?.play()
-	}, [emblaApi])
+	// const onMouseLeave = useCallback(() => {
+	// 	setIsHovered(false)
+	// 	emblaApi?.play()
+	// }, [emblaApi])
 
-	useEffect(() => {
-		if (emblaApi) {
-			emblaApi.on('pointerDown', () => {
-				emblaApi.stop()
-			})
-		}
-	}, [emblaApi])
+	// useEffect(() => {
+	// 	if (emblaApi) {
+	// 		emblaApi.on('pointerDown', () => {
+	// 			emblaApi.stop()
+	// 		})
+	// 	}
+	// }, [emblaApi])
 
 	return (
 		<Carousel
-			ref={emblaRef}
 			opts={{
 				loop: true,
+				skipSnaps: true,
 				align: 'start',
 			}}
 			plugins={[
 				Autoplay({
-					delay: 4000,
-					stopOnInteraction: true,
+					delay: 1000,
+					stopOnInteraction: false,
+					stopOnFocusIn: true,
+					stopOnMouseEnter: true,
 				}),
 			]}
 			className="w-full max-w-screen-2xl mx-auto"
-			onMouseEnter={onMouseEnter}
-			onMouseLeave={onMouseLeave}
+			// onMouseEnter={onMouseEnter}
+			// onMouseLeave={onMouseLeave}
 		>
 			<CarouselContent>
 				{projects.map((project, index) => (
