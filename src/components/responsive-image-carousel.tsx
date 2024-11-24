@@ -84,7 +84,7 @@ export default function ResponsiveImageCarousel() {
 			}}
 			plugins={[
 				Autoplay({
-					delay: 1000,
+					delay: 4000,
 					stopOnInteraction: false,
 					stopOnFocusIn: true,
 					stopOnMouseEnter: true,
