@@ -81,7 +81,7 @@ export default function ResponsiveImageCarousel() {
 			}}
 			plugins={[
 				Autoplay({
-					delay: 4000,
+					delay: 3500,
 					stopOnInteraction: false,
 					stopOnFocusIn: true,
 					stopOnMouseEnter: true,
@@ -111,8 +111,6 @@ export default function ResponsiveImageCarousel() {
 					</CarouselItem>
 				))}
 			</CarouselContent>
-			<CarouselPrevious />
-			<CarouselNext />
 		</Carousel>
 	)
 }
