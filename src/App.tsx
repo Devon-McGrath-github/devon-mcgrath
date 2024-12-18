@@ -1,4 +1,3 @@
-// import { PortfolioCarousel } from './components/Projects'
 import ResponsiveImageCarousel from './components/responsive-image-carousel'
 import { Button } from './components/ui/button'
 import './styles/App.css'
@@ -30,7 +29,6 @@ function App() {
 
 				<div className="shrink-0 flex items-center justify-center py-10 ">
 					<ResponsiveImageCarousel />
-					{/* <PortfolioCarousel /> */}
 				</div>
 			</main>
 		</>
